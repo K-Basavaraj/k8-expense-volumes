@@ -22,7 +22,7 @@ kind: Service
 apiVersion: v1 
 
 metadata: 
-  name: mysql-normal-service
+  name: mysql
   namespace: expense
   
 spec: 

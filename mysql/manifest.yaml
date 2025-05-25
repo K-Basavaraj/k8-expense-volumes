@@ -7,7 +7,7 @@ metadata:
   namespace: expense
   
 spec: 
-  cluserIP: None #for headless service there is no clusterip
+  clusterIP: None #for headless service there is no clusterip
   selector:
     project: expense
     component: mysql

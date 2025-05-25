@@ -13,7 +13,7 @@ spec:
     component: mysql
     tier: db
   ports: 
-    protocol: TCP
+  - protocol: TCP
     port: 3306  
     targetPort: 3306
 ---
@@ -31,7 +31,7 @@ spec:
     component: mysql
     tier: db
   ports: 
-    protocol: TCP
+  - protocol: TCP
     port: 3306  
     targetPort: 3306 
 ---
@@ -40,7 +40,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: mysql
-  namwespace: expense
+  namespace: expense
 spec:
   selector:
     matchLabels:
